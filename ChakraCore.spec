@@ -12,6 +12,10 @@ BuildRequires:	cmake >= 3.2
 ExclusiveArch:	%{ix86} %{x8664} arm
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+# clang does not like these
+%define		filterout_c -fvar-tracking-assignments
+%define		filterout_cxx -fvar-tracking-assignments
+
 %description
 ChakraCore is the core part of Chakra, the high-performance JavaScript
 engine that powers Microsoft Edge and Windows applications written in
