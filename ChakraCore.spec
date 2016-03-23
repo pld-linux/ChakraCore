@@ -7,7 +7,7 @@ Group:		X11/Libraries
 # NOTE: not storing on distfiles, until this package is actually useful
 Source0:	https://github.com/Microsoft/ChakraCore/archive/linux/ChakraCore.tar.gz
 URL:		https://github.com/Microsoft/ChakraCore
-BuildRequires:	clang
+BuildRequires:	clang >= 3.5
 BuildRequires:	cmake >= 3.2
 ExclusiveArch:	%{ix86} %{x8664} arm
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
