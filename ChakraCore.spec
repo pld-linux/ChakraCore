@@ -1,3 +1,5 @@
+%define		commit	53dd1c31
+%define		snap	20160504
 Summary:	ChakraCore is the core part of the Chakra JavaScript engine that powers Microsoft Edge
 Name:		ChakraCore
 Version:	0.1
@@ -5,7 +7,8 @@ Release:	0.1
 License:	MIT
 Group:		X11/Libraries
 # NOTE: not storing on distfiles, until this package is actually useful
-Source0:	https://github.com/Microsoft/ChakraCore/archive/linux/ChakraCore.tar.gz
+Source0:	https://github.com/Microsoft/ChakraCore/archive/linux/ChakraCore-%{snap}-%{commit}.tar.gz
+# Source0-md5:	c7661c9157dd7c4f233a923b11052e2f
 URL:		https://github.com/Microsoft/ChakraCore
 BuildRequires:	clang >= 3.5
 BuildRequires:	cmake >= 3.2
